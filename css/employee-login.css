@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+:where(img) { max-width: 100%; height: auto; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc url('../assets/img/leadss.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.login-card {
+    width: 420px;
+    background: white;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.login-card form {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    max-width: 100%;
+}
+
+.login-card .form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.login-card .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #374151;
+}
+
+.login-card .form-group input {
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    border-radius: 14px;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    font-size: 14px;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+}
+
+.login-card .form-group input:focus {
+    outline: none;
+    border: 1px solid #1B5E20;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(27, 94, 32, 0.15);
+}
+
+.login-card button {
+    width: 100%;
+    background: linear-gradient(135deg, #1B5E20 0%, #144a1e 100%);
+    color: white;
+    border: none;
+    height: 52px;
+    margin-top: 10px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.login-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.4);
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        width: 92%;
+        padding: 28px;
+    }
+    .login-card button {
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        width: 94%;
+        padding: 22px;
+    }
+    .login-card h2 { font-size: 22px; }
+    .login-card .form-group input { height: 48px; }
+}
+
+.error {
+    background: #FEE2E2;
+    color: #B91C1C;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.success {
+    background: #DCFCE7;
+    color: #166534;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #1B5E20;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+}
+
+.back-btn:hover {
+    color: #1B5E20;
+}

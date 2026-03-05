@@ -1,0 +1,119 @@
+/* Global helpers */
+* { box-sizing: border-box; }
+:where(img) { max-width: 100%; height: auto; }
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: url('../assets/img/leadss.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); /* Overlay to make the card stand out */
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    width: 450px;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.auth-card h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #1B5E20;
+    font-weight: 700;
+}
+
+.auth-card p {
+    color: #4b5563;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.auth-btn {
+    display: grid;
+    grid-template-columns: 36px 1fr 20px;
+    align-items: center;
+    column-gap: 12px;
+    padding: 16px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    background: #ffffff;
+    color: #166534;
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.auth-btn:hover {
+    background: #166534;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #f3f4f6;
+    color: inherit;
+}
+
+.btn-icon i { font-size: 18px; }
+
+.btn-label {
+    text-align: center;
+}
+
+.btn-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.auth-btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+.auth-extra {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.auth-extra a {
+    color: #166534;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-extra a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+    .auth-card { width: 92%; padding: 28px; }
+    .auth-buttons { gap: 14px; }
+}
